@@ -1,0 +1,68 @@
+<!doctype HTML>
+<html lang="en">
+
+<head>
+	<meta http-equiv="refresh" id="redirect" content="4; url=homepage.html"> <!-- meta tag to redirect after 4 seconds -->
+	<meta charset = "UTF-8">
+	<title> Presentation Page </title>
+	<!-- css -->
+	<style>
+		h4{
+			font-size: 20px;
+		}
+		img{
+			float: left;
+		}
+	</style>
+</head>
+
+<body>
+	<img src="Student 1/Logo.jpg" alt="logo" width = "40" height="42" >
+	<h2> &nbsp; 4COSC011C.3 - Web Design & Development</h2>
+	<h3> Group Coursework - Website Design and Development</h3>
+	<h3> Group G-6 </h3>
+	<h2> EDUCATION </h2>
+	
+	<!-- team members details-->
+	<img src = "https://logowik.com/content/uploads/images/810_student.jpg" alt="student icon" width="60" height="63">
+	<h4> Student 1:</h4>
+	<br>
+	Raabiya Rismy <br>
+	w1985539<br><br>
+		
+	<img src = "https://logowik.com/content/uploads/images/810_student.jpg" alt="student icon" width="60" height="63">
+	<h4>Student 2: </h4>
+	A.H.G.Asanga Kavindi<br>
+	w1985716 <br><br>
+		
+	<img src = "https://logowik.com/content/uploads/images/810_student.jpg" alt="student icon" width="60" height="63">
+	<h4>Student 3: </h4> 
+	Senadi Illeperuma<br>
+	w1998883<br><br>
+		
+	<img src = "https://logowik.com/content/uploads/images/810_student.jpg" alt="student icon" width="60" height="63">
+	<h4>Student 4: </h4>
+	Zainab Hassandeen<br>
+	w2000953<br><br>
+		
+	<!-- countdown code -->	
+	<div id="countdown"></div>
+	<script>
+		var countdownElement = document.getElementById("countdown");
+		var redirectElement = document.getElementById("redirect");
+		var count = parseInt(redirectElement.getAttribute("content"));
+			
+		function countdown(){
+			countdownElement.innerHTML= "Redirecting in " + "<b>" + count + "</b>" + " seconds"; //update countdown
+			count--;
+				
+			if (count >= 0){
+				setTimeout(countdown, 1000);
+			}
+		}
+		
+		countdown();
+	</script>				
+</body>
+
+</html>

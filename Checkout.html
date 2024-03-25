@@ -1,0 +1,216 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title> UNIWAY | Checkout </title>
+		<style>
+			label {
+			float: left;
+			width: 20%;	
+			}
+			#wrapper{
+				width: 900px;
+				margin: 0 auto;
+				
+			}
+			.dropdown-content {
+				display: none;
+			}	
+			.correct {
+				color: green;
+				text-decoration: bold;
+			}
+			.incorrect {
+				color: red;
+				text-decoration: bold;
+			}
+			.footer {
+				background-color: #333;
+				color: #fff;
+				padding: 2px;
+				text-align: center;
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+			}
+			a:link{
+				color: blue;
+			}
+			
+			a:visited {
+				color: gray;
+			}
+			
+			a:hover {
+				color: white;
+			}
+		</style>
+	</head>	
+	<body>
+	<iframe src="Nav-bar.html" frameborder="0" scrolling="no" width="100%" height="150"></iframe>
+	<div id="wrapper">
+		<h1> CHECKOUT </h1>
+		
+		<fieldset id= "fieldset1">
+		*field is compulsory
+		<hr>
+		<div>
+			<label for="name"> Name </label>
+			<input type="text" name="name" id="name" value=""><br>
+			<label for="tot"> Total Bill </label>
+			<input type="text" name="tot" id="tot"><br>
+			
+		</div>
+		<div>
+			<h3>Payment Details</h3>
+			<label for="card"> Card Number* </label>
+			<input type="text" name="card" id="card" placeholder="(16 digits)">
+			<span id="cardValidation"></span><br>
+			<label for="cardname"> Cardholder's Name* </label>
+			<input type="text" name="cardname" id="cardname"><br>
+			<label for="date"> Expiry Date* </label>
+			<input type="text" name="date" id="date" placeholder="MM/YY"><br>
+			<label for="cvc"> Card Verification Code* </label>
+			<input type="text" name="cvc" id="cvc" placeholder="*  *  *   "><br>
+		</div>
+		<div>
+			<h3>Contact Details</h3>
+			<span onclick="formVisibility()" class="dropdown" style="float:right">Edit&#9662;</span>
+			<div id="editForm" class="dropdown-content">
+			
+				<label for="phone"> Phone Number </label>
+				<input type="text" name="phone" id="phone"><br>
+				
+				<label for="email"> Email Address* </label>
+				<input type="email" name="email" id="email"><br>
+				
+				<label for="offer"> Email me with offers </label>
+				<input type="checkbox" name="offer" id="offer"> <br>
+				
+				<button type="submit" onclick="saveContact()">Save</button>
+			</div>
+		</div>	
+
+		<div id="contactInfo">
+			<span id="displayedEmail"> Please fill out the form with your details. </span>
+		</div>
+		
+		<div>
+			<h3>Billing Address</h3> 
+			<span onclick="formVisibility2()" class="dropdown" style="float:right">Edit&#9662;</span>
+			<div id="editForm2" class="dropdown-content">
+			
+			<label for="country"> Country </label>
+				<select name="country" id="country">
+					<option value="srilanka"> Sri Lanka </option>
+					<option value="india"> India </option> 
+				</select> <br>
+			<label for="address"> Address* </label>
+			<input type="text" name="address" id="address" placeholder="Indicate your full address"><br>
+			<label for="type"> Apartment, suite, etc. </label>
+			<input type="text" name="type" id="type" placeholder="(optional)"><br>
+			<label for="city"> City: </label>
+			<input type="text" name="city" id="city" placeholder="Indicate your nearest city"><br>
+			<label for="code"> Postal Code </label>
+			<input type="text" name="code" id="code"><br>
+				
+			<button type="submit" onclick="saveBilling()">Save</button>
+			</div>
+		</div>	
+
+		<div id="billingInfo">
+			<span id="displayedBilling"> Please fill out the form with your details. </span>
+		</div>
+		<br>
+		<div> 
+			<button type="submit" id="submit" onclick="validateForm()"> Make Payment </button>
+		</div>
+		</fieldset>
+	</div>
+	<script>
+		function formVisibility() {
+			var editForm = document.getElementById("editForm");
+
+			if (editForm.style.display === "none") {
+				editForm.style.display = "block";
+			} else {
+				editForm.style.display = "none";
+			}
+		}
+		
+		function formVisibility2() {
+			var editForm = document.getElementById("editForm2");
+
+			if (editForm.style.display === "none") {
+				editForm.style.display = "block";
+			} else {
+				editForm.style.display = "none";
+			}
+		}
+		
+		function saveContact() {
+			var displayedEmailSpan = document.getElementById("displayedEmail");
+			var emailInput = document.getElementById("email");
+
+			var enteredEmail = emailInput.value;
+			displayedEmailSpan.textContent = enteredEmail;
+
+			var editForm = document.getElementById("editForm");
+			editForm.style.display = "none";
+		}
+		
+		function saveBilling() {
+			var displayedBillingSpan = document.getElementById("displayedBilling");
+			var addressInput = document.getElementById("address");
+
+			var enteredAddress = addressInput.value;
+			displayedBillingSpan.textContent = enteredAddress;
+
+			var editForm = document.getElementById("editForm2");
+			editForm.style.display = "none";
+		}
+		
+		function makepayment() {
+			var confirmationMessage = "Order Confirmed.\nCheck your mail for more details.";
+			alert(confirmationMessage);
+		}
+		function validateCardNumber() {
+			var cardNumberInput = document.getElementById("card");
+			var cardNumber = cardNumberInput.value; 
+			var cardIndicator = document.getElementById("cardValidation");
+
+			if (cardNumber.length === 16 && !isNaN(cardNumber)) {
+				cardIndicator.innerHTML = "&check;";
+				cardIndicator.classList.remove("incorrect");
+				cardIndicator.classList.add("correct");
+			} else {
+			cardIndicator.innerHTML = "&cross;";
+			cardIndicator.classList.remove("correct");
+			cardIndicator.classList.add("incorrect");
+			}
+		}
+		var cardNumberInput = document.getElementById("card");
+		cardNumberInput.addEventListener("input", validateCardNumber);
+
+		cardNumberInput.addEventListener("blur", validateCardNumber);
+		
+		var submitButton = document.getElementById("submitButton");
+		
+		function validateForm() {
+			var crosses = document.getElementsByClassName("incorrect");
+			if (crosses.length > 0) {
+				event.preventDefault(); // Prevent form submission
+				alert("Please correct the errors before submitting the form.");
+			} else {
+				alert("Order Confirmed.\nCheck your mail for more details.");
+        
+			}
+		}
+	</script>
+	<div class="footer">
+        <p>&copy; UNIWAY 2023, All rights reserved.</p>
+		<a href="page_editor1.html"> View Page Editor </a>
+    </div>
+</body>
+</html>	

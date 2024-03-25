@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , intial-scale=1.0">
+    <title>FeedBack</title>
+    <link rel="stylesheet" href="Student 2/commentstyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kaushan+Script&family=KoHo:ital,wght@1,200&family=Oswald:wght@200&family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" >
+
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="heading">
+        <a class="logo" >
+            <img class="resize-img" src="Student 2/images/logo_N.png" alt="Logo">
+        </a>
+        <p class="logoheading">UNIWAY</p>
+
+        <nav>
+          
+                <ul class="centerNavBar">
+                
+                    <li>
+                        <i   class="fa fa-home aria-hidden" aria-hidden="true"></i>
+                        <a href="homepage.html" class="withoutLast" >Main Page
+                            </a>
+                    </li>
+                    <li>
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                         <a href="comments.html" class="withoutLast">Query Form</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <a href="shop.html" class="withoutLast">Buy Product</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-sitemap" aria-hidden="true"></i>
+                        <a href="SiteMap.html" class="withoutLast">Site Map</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                         <a href="quiz.html" class="withoutLast">Quiz</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-camera-retro"></i>
+                    
+                        <a href="Gallery.html" class="withoutLast">Gallery</a>
+                   </li>
+                   
+                    <li>
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <a href="Student_Details.html" class="withoutLast">Student Details</a>
+                    </li>
+                </ul>
+  
+
+        </nav>
+        <hr>
+
+    </div>
+
+    
+    
+</header>
+<form>
+  <div id="FeedBack">
+        <div class="rating-container">
+          <p>How satisfied were you with our website ? </p><br><br>
+          <div class="rating-labels">
+            <label for="rating-0">0</label>
+            <label for="rating-1">1</label>
+            <label for="rating-2">2</label>
+            <label for="rating-3">3</label>
+            <label for="rating-4">4</label>
+            <label for="rating-5">5</label>
+            <label for="rating-6">6</label>
+            <label for="rating-7">7</label>
+            <label for="rating-8">8</label>
+            <label for="rating-9">9</label>
+            <label for="rating-10">10</label>
+          </div>
+          <div class="rating-inputs">
+            <input type="radio" id="rating-0" name="rating" value="0" required>
+            <input type="radio" id="rating-1" name="rating" value="1" required>
+            <input type="radio" id="rating-2" name="rating" value="2" required>
+            <input type="radio" id="rating-3" name="rating" value="3" required>
+            <input type="radio" id="rating-4" name="rating" value="4" required>
+            <input type="radio" id="rating-5" name="rating" value="5" required>
+            <input type="radio" id="rating-6" name="rating" value="6" required>
+            <input type="radio" id="rating-7" name="rating" value="7" required>
+            <input type="radio" id="rating-8" name="rating" value="8" required>
+            <input type="radio" id="rating-9" name="rating" value="9" required>
+            <input type="radio" id="rating-10" name="rating" value="10" required>
+          </div>
+        </div><br>
+    
+        <div class="text-area">
+          <label for="feedback2">Please could you tell us your reasons for giving this rating ?</label><br>
+          <textarea name="feedback2" id="feedback2" cols="120" rows="4" required></textarea>
+        </div><br>
+    
+        <div class="drop-down-one">
+            <label for="feedback2">Secure Online Payment</label><br>
+            <select name="rating-1" id="feedback3">
+              <option value="option1" selected>~ Very Satisfied ~</option>
+              <option value="option1" >Satisfied</option>
+              <option value="option1" >Neutral</option>
+              <option value="option1" >Dissatisfied</option>
+            </select>
+        </div><br>
+    
+        <div class="drop-down-one">
+            <label for="feedback3">Responsive Design</label><br>
+            <select name="rating-2" id="feedback4">
+              <option value="option1" selected>~ Excellent ~</option>
+              <option value="option1" >Good</option>
+              <option value="option1" >Average</option>
+              <option value="option1" >poor</option>
+            </select>
+        </div><br>
+    
+        <div class="drop-down-one">
+            <label for="feedback4">Attractive and Clean Design</label><br>
+            <select name="rating-3" id="feedback5">
+              <option value="option1" selected>~ Excellent ~</option>
+              <option value="option1" >Good</option>
+              <option value="option1" >Average</option>
+              <option value="option1" >poor</option>
+            </select>
+        </div><br>
+  </div>
+        
+        <button class="submit-button" type="submit" onclick="openpopup()" >Submit</button>
+        <div class="popup" id="popup">
+        <img src="Student 2/images/tik.png"  alt="mark icon">
+        <h2>Thank you</h2>
+        <p>Your feedback has been successfully submitted.Thanks!</p>
+        <button type="button"  onclick="closepopup()">OK</button>
+      </div>
+      </form>
+
+
+
+       <!-- footer start -->
+
+    <footer class="footer" id="footer">
+      <div class="col">
+          <a href="" class="logo">
+              <h3>Uni<span>Way</span>.lk</h3>
+          </a>
+          <br>
+          <h4>Contact:</h4>
+          <p>Address: No.2, Temple road, Colombo 4</p>
+          <p>Hotline: 091 22 55 883 / 091 22 55 884</p>
+          <p>Open: 8.00 - 20.00 Weekdays / 9.00 - 18.00 Weekends</p>
+          <br>
+          <div class="row">
+              <p>&copy; 2023 WWW.Uniway.lk - All rights reserved.</p>
+          </div>
+      </div>
+      <div class="col">
+          <h4>About</h4>
+          <br>
+          <a href="comments.html">About us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="page_editor2.html">Page Edited by Asanga Kavindi</a>
+      </div>
+      <div class="col">
+          <h4>Other</h4>
+          <br>
+          <a href="">Sign in</a>
+          <a href="">shop</a>
+          <a href="">Help</a>
+      </div>
+      <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+              <a href=""><img class="icon" src="Student 2/icons/facebook.svg"  alt="Facebook icon"></a>
+              <a href=""><img class="icon" src="Student 2/icons/twitter.svg"    alt="Twitter icon"></a>
+              <a href=""><img class="icon" src="Student 2/icons/google.svg"   alt="Google icon"></a>
+              <a href=""><img class="icon" src="Student 2/icons/square-instagram.svg"  alt="Instragram icon"></a>
+              <a href=""><img class="icon" src="Student 2/icons/pinterest.svg"   alt="Pinterest icon"></a>
+          </div>
+      </div>
+  </footer>
+
+  <!-- footer end -->
+
+  <script src="Student 2/comments.js"> </script>
+
+
+</body>
+</html>

@@ -1,0 +1,596 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title> UNIWAY | Shop </title>
+	<link rel="stylesheet" type="html/css" href="Student 4/External.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" >
+
+	
+	
+	<style>
+		
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+header{
+  padding: auto;
+  align-items:center;
+  justify-content: flex-end;
+  background-color:rgb(0,0,26);
+  display: relative;
+  
+
+
+}
+
+.centerNavBar{
+  list-style: none;
+  display:flex;
+  word-spacing: 30px;
+  text-align: center;
+  float:inline-start;
+ 
+
+
+}
+.centerNavBar a{
+  color:white;
+  font-weight: 600;
+  text-decoration: none;
+
+
+}
+.cta,
+.overlay__content a{
+  font-family: "Poppins",sans-serif;
+  font-weight: 200;
+  color: rgb(19, 17, 17);
+  text-decoration: none;
+}
+
+.centerNavBar li{
+padding: 20px 30px;
+}
+
+
+.centerNavBar li a {
+  transition: all 0.3s ease 0s;
+
+
+}
+.centerNavBar li a:hover{
+  word-spacing: 30px;
+  font-size: larger;
+  color:rgb(17, 15, 15) ;
+  font-weight: bolder;
+
+}
+nav i {
+  color:white;
+  }
+
+hr{
+  border: outset;
+  height: 4px;
+  color:rgb(40,78,109);
+}
+.cta{
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgb(106, 106, 109);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.cta:hover{
+  background-color: rgb(106, 106, 109);
+}
+.withoutLat{
+  text-decoration: none;
+  color: #ffff;
+  padding-right: 20px;
+  border-right: 2px;
+}
+/*Logo*/
+.logo{
+  margin-right: 20px;
+  
+}
+.logo img{
+  border-radius: 50%;
+  
+}
+
+.resize-img{
+  width: 100px;
+  height: auto;
+}
+/*Logo Heading*/
+.logoheading{
+  color:rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 600;
+  margin-right: 520px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+/*---comment section style*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;;
+}
+
+body{
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	
+  
+  
+}
+
+.rating-container {
+  margin-top: 40px;
+  padding: 30px 0px 40px 0px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.rating-labels {
+  display: flex;
+  justify-content: space-between;
+  width: 650px; /* Adjust the width as needed */
+  padding-bottom: 10px;
+ 
+}
+
+.rating-labels label {
+  flex: 1;
+  text-align: center;
+
+}
+
+.rating-inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 600px; /* Adjust the width as needed */
+  
+}
+
+/* Customize the appearance of the radio button */
+.rating-inputs input[type="radio"] + label {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+/* Style the selected radio button */
+.rating-inputs input[type="radio"]:checked + label {
+  background-color: #007bff;
+  color: #fff;
+  
+}
+
+.text-area {
+  padding: 30px 0px 40px 0px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.drop-down-one{
+  padding: 30px 0px 40px 0px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+#feedback3{
+  width: 800px;
+  height: 40px;
+}
+#feedback4{
+  width: 800px;
+  height: 40px;
+}
+#feedback5{
+  width: 800px;
+  height: 40px;
+}
+
+.submit-button{
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid;
+  background: #314c69;
+  outline: none;
+  font-size: 22px;
+  cursor: pointer;
+  border: none;
+}
+.popup{
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top:0;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s top 0.4s ;
+}
+
+.open-popup{
+  visibility: visible;
+  top:0;
+  transform:translate(-50%,-50%) scale(1);
+
+}
+.popup img{
+  width: 100px;
+  margin-top: -50px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.5);
+}
+
+.popup h2{
+  font-size: 38px;
+  margin: 30px 0 10px;
+}
+.popup button{
+  width: 100%;
+  margin-top:50px;
+  padding: 10px 0;
+  background: #4c6379;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size:18px ;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow:0 2px 5px rgba(0,0,0,0.5);
+
+}
+
+ /*---styling footer---*/
+
+ .footer {
+  
+  height: 35vh;
+  background-color: rgba(28, 15, 96, 0.936);
+  padding-left: 100px;
+  padding-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+footer p {
+  font-size: 13px;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+  margin-bottom: 10px;
+}
+
+a:hover {
+  color: rgb(248, 115, 7);
+}
+
+.follow {
+  padding-right: 160px;
+}
+
+.icon img{
+  width: 50px;
+}
+		img {
+			width: 150px;
+			height: 200px;
+		
+		}
+		.product{
+			padding: 20px;
+			float: left;
+		}
+		h1 {
+			text-align: center;
+		}
+		cart {
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin-right: 20px;
+			width: 200px;
+			position: fixed;
+			
+		}
+		.foot{
+			margin-top: auto;
+			position: fixed;
+		}
+		.footer {
+            background-color: #333;
+            color: #fff;
+            padding: 2px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+		a:link{
+			color: blue;
+		}
+			
+		a:visited {
+			color: gray;
+		}
+			
+		a:hover {
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+
+		<header>
+
+			<a class="logo">
+					<img class="resize-img" src="Student 4/Images/Logo.jpeg" alt="Logo">
+					<p class="logoheading">UNIWAY</p>
+			</a>
+
+			<nav>
+							<ul class="centerNavBar">
+									<li>
+											<i  class="fa fa-home aria-hidden" aria-hidden="true"></i>
+											<a href="homepage.html" class="withoutLast" >Main Page
+													</a>
+									</li>
+									<li>
+											<i class="fa fa-comment" aria-hidden="true"></i>
+											<a href="comments.html" class="withoutLast">Query Form</a>
+									</li>
+									<li>
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											<a href="shop.html" class="withoutLast">Buy Product</a>
+									</li>
+									<li>
+											<i class="fa fa-sitemap" aria-hidden="true"></i>
+											<a href="SiteMap.html" class="withoutLast">Site Map</a>
+									</li>
+									<li>
+											<i class="fa fa-question-circle" aria-hidden="true"></i>
+											<a href="quiz.html" class="withoutLast">Quiz</a>
+									</li>
+									<li>
+											<i class="fa fa-camera-retro"></i>
+											<a href="Gallery.html" class="withoutLast">Gallery</a>
+								</li>
+									<li>
+											<i class="fa fa-users" aria-hidden="true"></i>
+											<a href="Student_Details.html" class="withoutLast">Student Details</a>
+									</li>
+							</ul>
+			</nav>
+	</header>
+
+	<!-- <iframe src="Nav-bar.html" frameborder="0" scrolling="no" width="100%" height="150"></iframe> -->
+	<h1> College Stationary Supplies</h1>
+	<div class="product" id="product1">
+		<img src="Student 1/Pens.jpg" alt="Pens Set">
+		<div class="description">
+			<h3> Ballpoint Pen Set </h3>
+			<div class="price"> 
+				<form>
+				<p>&dollar; 4 </p> &nbsp; Qty: 
+				<select name="quantity" id="quantity1" onchange="updateCart('product1', this.value)" >
+				<option value=1> 1 </option>
+				<option value=2> 2 </option>
+				<option value=3> 3 </option>
+				<option value=4> 4 </option>
+				<option value=5> 5 </option>
+				</select>
+				</form>
+			</div>
+			
+		</div>
+			
+	</div>
+	<div class="product" id="product2">
+		<img src="Student 1/StickyNotes.jpg" alt="Sticky Notes">
+		<div class="description">
+			<h3> Sticky Notes </h3>
+			<div> 
+				<form>
+				<p>&dollar; 5 </p>&nbsp; Qty:
+				<select name="quantity" id="quantity2" onchange="updateCart('product2', this.value)" onReset="resetOrder();">
+				<option value=1> 1 </option>
+				<option value=2> 2 </option>
+				<option value=3> 3 </option>
+				<option value=4> 4 </option>
+				<option value=5> 5 </option>
+				</select>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="product" id="product3">
+		<img src="Student 1/Highlighter.jpg" alt="Highlighters Set">
+		<div class="description">
+			<h3> Classic Highlighters </h3>
+			<div> 
+				<form>
+				<p>&dollar; 6 </p> &nbsp; Qty:
+				<select name="quantity" id="quantity3" onchange="updateCart('product3', this.value)">
+				<option value=1> 1 </option>
+				<option value=2> 2 </option>
+				<option value=3> 3 </option>
+				<option value=4> 4 </option>
+				<option value=5> 5 </option>
+				</select>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="product" id="product4">
+		<img src="Student 1/NB.jpg" alt="Notebooks">
+		<div class="description">
+			<h3> Spiral Notebook </h3>
+			<div> 
+			<form>
+			<p>&dollar; 12</p> &nbsp; Qty:
+			<select name="quantity" id="quantity4" onchange="updateCart('product4', this.value)">
+			<option value=1> 1 </option>
+			<option value=2> 2 </option>
+			<option value=3> 3 </option>
+			<option value=4> 4 </option>
+			<option value=5> 5 </option>
+			</select>
+			</form>
+			</div>
+		</div>
+	</div>
+	<div class="product" id="product5">
+		<img src="Student 1/DeskCal.jpg" alt="Desk Calendar" >
+		<div class="description">
+			<h3> 2023 Desk Calendar </h3>
+			<div> 
+			<form>
+			<p>&dollar; 15 </p>&nbsp; Qty:
+			<select name="quantity" id="quantity5" onchange="updateCart('product5', this.value)">
+			<option value=1> 1 </option>
+			<option value=2> 2 </option>
+			<option value=3> 3 </option>
+			<option value=4> 4 </option>
+			<option value=5> 5 </option>
+			</select>
+			</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="cart" id="cartOrder">
+		<h2>Your Order: </h2>
+		<div id="orderDetails">
+			<!-- Order list will be added here -->
+		</div>
+		
+		<div class="product" id="order">
+			
+		</div>
+	</div>
+	
+	<br>
+	<form name="foot" id="foot" action="Checkout.html" method="get">
+		<label for="name"> Name: </label>
+		<input type="text" class="name" id="name">
+		<br><br>
+		<button type="submit"> Place Order</button>
+	</form>	
+	<br>
+	<form>
+	<button type="reset">Clear Order</button>
+	</form>
+	
+	
+	
+	<script> 
+	function displayOrder (order){
+		alert(order);
+		switch (order){
+			case "Pens":
+				document.getElementById("order").innerHTML=document.getElementById("product1").innerHTML;
+				break;
+			case "Sticky Notes":
+				document.getElementById("order").innerHTML=document.getElementById("product2").innerHTML;
+				break;
+			case "Highlighters":
+				document.getElementById("order").innerHTML=document.getElementById("product3").innerHTML;
+				break;
+			case "Notebooks":
+				document.getElementById("order").innerHTML=document.getElementById("product4").innerHTML;
+				break;
+			case "Calendar":
+				document.getElementById("order").innerHTML=document.getElementById("product5").innerHTML;
+				break;		
+			default:
+				document.getElementById("order").innerHTML= "";
+				break;	
+		}		
+	}
+	document.getElementById("product1").addEventListener("click", function(){displayOrder("Pens")})
+	document.getElementById("product2").addEventListener("click", function(){displayOrder("Sticky Notes")});
+	document.getElementById("product3").addEventListener("click", function(){displayOrder("Highlighters")});
+		
+		function resetOrder(){
+			document.getElementById("quantity1").innerHTML = "";
+		}
+		document.forms[0].addEventListener("reset", resetOrder);
+		
+
+	</script>
+	<div class="footer">
+        <p>&copy; UNIWAY 2023, All rights reserved.</p>
+		<a href="page_editor1.html"> View Page Editor </a>
+    </div>
+</body>
+</html>

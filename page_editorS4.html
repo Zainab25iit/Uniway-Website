@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width= device-width, initial-scale=1.0">
+<title> UNIWAY | Page Editor</title>
+<link rel="icon" href="Student 4/images/Logo.jpg">
+<link rel="Stylesheet" href="Student 4/S4details.css">
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*{
+    font-family: "poppins",sans-serif;
+    padding: 0;
+}
+
+body{
+    background: rgb(27, 26, 26);
+}
+.Card{
+    width: auto;
+    height:auto;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    left: 50%;
+    box-sizing:content-box;
+    top:50%;
+    transform:translate(-50%,-50%);
+    position: absolute;
+}
+.Card img{
+    width: 100px;
+    height: 130px;
+    margin: auto;
+    border-radius: 20%;
+}
+.Card div h1{
+    line-height: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.Card div h1 span{
+    font-size: 15px;
+    color: rgb(0, 0, 26);
+}
+
+.Card:hover:before{
+    transform: scale(17);
+}
+
+.Card::before{
+    position: absolute;
+    z-index: -1;
+    border-top-left-radius: 100px;
+    right: 0;
+    content: '';
+    width: 100px;
+    bottom: 0;
+    transition: 0.5s;
+    background: rgb(40, 78, 109);
+    height: 100px;
+}
+
+.task{
+    font-size: 16px;
+}
+p{
+    text-align: justify;
+}
+</style>
+
+    </head>
+    <body>
+        <div class="Card">
+            <div>
+                <img src="Student 4/Images/S4.jpeg" alt="Student4">
+                <h1>ZAINAB HASSANDEEN<br>
+                    <br>
+                    <span>ROLE:  Student Role 4</span>
+                </h1>
+                <h3>UOW-ID: w2000953</h3>
+                <h3>IIT ID: 20220669</h3>
+                <div class="tasks"><b>The following pages were edited by me!</b><br>
+
+                    1. GALLERY PAGE
+                    <p>Created a gallery with thumbnails using html image tags.
+                    Used Javascript to display an enlarged image when the user hover over the thumbnails.
+                    Added a description for each image using Javascript</P>
+                    <a href="Gallery.html">Link to Gallery Page</a><br>
+                    <br>
+                    <br>
+
+                    2. SITEMMAP PAGE 
+                    <p>Created a sitemap using scalable vector graphics in html.
+                    Made some SVG elements interactive using Javscript.
+                    Linked all web pages to the SVG elements using Javascript.</P>
+                    <a href="SiteMap.html">Link to Site Map Page</a><br>
+                    <br>
+                    <br>
+
+                    3. ADDITIONAL PAGE
+                    <p> Created an additional content page using HTML and CSS.</p>
+                    <a href="Additonal_Law.html"> Link to additional content page.</a>
+
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+</html>
